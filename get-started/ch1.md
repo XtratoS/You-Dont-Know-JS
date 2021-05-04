@@ -252,6 +252,8 @@ You may wonder: why go to the trouble of using a tool to convert from a newer sy
 
 Developers should focus on writing the clean, new syntax forms, and let the tools take care of producing a forwards-compatible version of that code that is suitable to deploy and run on the oldest-supported JS engine environments.
 
+_BOOKMARK_
+
 ### Filling the Gaps
 
 If the forwards-compatibility issue is not related to new syntax, but rather to a missing API method that was only recently added, the most common solution is to provide a definition for that missing API method that stands in and acts as if the older environment had already had it natively defined. This pattern is called a polyfill (aka "shim").
